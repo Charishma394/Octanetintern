@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="todo.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-header">
+            <h2>ToDo List </h2>
+            <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWVFORB_O4TUgfQFIm46p3iLVDb-Kn7agZQ&s" height="50px" />
+        </div>
+
+        <div class="todo-body">
+            <input 
+                type="text"
+                id="todoText"
+                class="todo-input"
+                placeholder="Add your task"
+            />
+
+            <img 
+            src="https://cdn-icons-gif.flaticon.com/10195/10195195.gif" 
+            alt="+" 
+            id="AddUpdateClick" 
+            onclick="CreateToDoData()"
+            />
+        </div>
+        <h5 id="AlertMessage"></h5>
+        <ul id="list-items" class="list-items"></ul>
+    </div>
+    <script type="text/javascript" src="script.js" ></script>
+
+</body>
+</html>
